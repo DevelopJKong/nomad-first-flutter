@@ -49,14 +49,31 @@ class MyApp extends StatelessWidget {
                         color: Colors.white.withOpacity(0.8),
                       )),
                   SizedBox(
-                    height: 10,
+                    height: 5,
                   ),
                   Text('\$5 194 482',
                       style: TextStyle(
-                        fontSize: 44,
+                        fontSize: 48,
                         fontWeight: FontWeight.w600,
-                        color: Colors.white.withOpacity(0.8),
-                      ))
+                        color: Colors.white,
+                      )),
+                  SizedBox(
+                    height: 20,
+                  ),
+                  Row(children: [
+                    Container(
+                        decoration: BoxDecoration(
+                          color: Colors.amber,
+                        ),
+                        child: Padding(
+                          padding: EdgeInsets.symmetric(
+                              vertical: 20, horizontal: 50),
+                          child: Text('Transfer',
+                              style: TextStyle(
+                                fontSize: 22,
+                              )),
+                        ))
+                  ])
                 ],
               ),
             )));
